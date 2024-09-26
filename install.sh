@@ -35,7 +35,8 @@ terraform -version
 # Setup git
 echo "Setup git"
 git config --global user.name "teodor"
-git config --global user.email "teodor.englund@gmail.com"
+git config --global user.email "teodor.englund@none.com"
+git config --global credential.https://dev.azure.com.useHttpPath true
 
 # install nvm / node
 echo "Install NVM"

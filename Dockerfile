@@ -22,6 +22,11 @@ RUN /home/dev/install.sh
 
 # Expose any ports you need (optional)
 # EXPOSE 8080
+# Create a new user and add to sudoers
+# RUN useradd -m -s /bin/bash devuser && \
+#     echo 'devuser:password' | chpasswd && \
+#     usermod -aG sudo devuser && \
+#     echo 'devuser ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 
 # Set default shell
 CMD ["/bin/bash"]
