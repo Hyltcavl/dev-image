@@ -42,6 +42,7 @@ wsl --set-default dev-image OR wsl -d dev-image --user dev
 wsl -d dev-image  
 '''
 
+USE KEX for desktop setup: https://github.com/GTekSD/WSL2-kali-setup
 TODO:
 
 * Maven installation not working
